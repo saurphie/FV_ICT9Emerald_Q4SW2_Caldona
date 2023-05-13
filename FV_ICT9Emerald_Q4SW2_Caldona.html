@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tick Tock!</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background-image: url(BG.jpg);
+			background-size: cover;	
+			}
+		.AYOKONA {
+ 			 margin-left: auto;
+ 			 margin-right: auto;
+ 			}
+ 		.AYOKONA th {
+ 			 padding: 30px;
+ 			 border: dashed;
+ 			}
+
+		</style>
+</head>
+<body>
+	<center><h1><b>𝙲𝚕𝚘𝚌𝚔 𝚘𝚏 𝙻𝚒𝚏𝚎<b></h1><center>
+		<img src="clock.png" width="300px">
+		<h5><p><center>𝐓𝐡𝐢𝐬 𝐜𝐥𝐨𝐜𝐤 𝐰𝐢𝐥𝐥 𝐝𝐞𝐭𝐞𝐫𝐦𝐢𝐧𝐞 𝐡𝐨𝐰 𝐦𝐮𝐜𝐡 𝐭𝐢𝐦𝐞 𝐥𝐞𝐟𝐭 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐢𝐧 𝐭𝐡𝐢𝐬 𝐰𝐨𝐫𝐥𝐝. 𝐂𝐨𝐧𝐯𝐞𝐫𝐭 𝐭𝐡𝐞 𝐭𝐢𝐦𝐞 𝐛𝐞𝐟𝐨𝐫𝐞 𝐢𝐭 𝐫𝐮𝐧𝐬 𝐨𝐮𝐭!</center></p></h5>
+		<table class="AYOKONA">
+				<tbody>
+					<tr>
+						<th style="background-color: #708238">
+							<center><h3>𝚂𝚎𝚌𝚘𝚗𝚍𝚜</h3></center>
+							<center><p> <input type="number" id="SECONDS"> </p></center>
+							<input type="button" class="btn btn-light" onclick="SM()" value="𝙼𝚒𝚗𝚞𝚝𝚎𝚜">
+							<input type="button" class="btn btn-light" onclick="SH()" value="𝙷𝚘𝚞𝚛𝚜">
+							<input type="button" class="btn btn-light" onclick="SD()" value="𝙳𝚊𝚢𝚜">
+						</th>
+						<th style="background-color: #597D35">
+							<center><h3>𝙼𝚒𝚗𝚞𝚝𝚎𝚜</h3></center>
+							<center><p> <input type="number" id="MINUTES"> </p></center>
+							<input type="button" class="btn btn-light" onclick="MS()" value="𝚂𝚎𝚌𝚘𝚗𝚍𝚜">
+							<input type="button" class="btn btn-light" onclick="MH()" value="𝙷𝚘𝚞𝚛𝚜">
+							<input type="button" class="btn btn-light" onclick="MD()" value="𝙳𝚊𝚢𝚜">
+						</th>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="AYOKONA">
+			<tbody>
+					<tr>
+						<th style="background-color: #708238">
+							<center><h3>𝙷𝚘𝚞𝚛𝚜</h3></center>
+							<center><p> <input type="number" id="HOURS"> </p></center>
+							<input type="button" class="btn btn-light" onclick="HS()" value="𝚂𝚎𝚌𝚘𝚗𝚍𝚜">
+							<input type="button" class="btn btn-light" onclick="HM()" value="𝙼𝚒𝚗𝚞𝚝𝚎𝚜">
+							<input type="button" class="btn btn-light" onclick="HD()" value="𝙳𝚊𝚢𝚜">
+						</th>
+						<th style="background-color: #597D35">
+							<center><h3>𝙳𝚊𝚢𝚜</h3></center>
+							<center><p> <input type="number" id="DAYS"> </p></center>
+							<input type="button" class="btn btn-light" onclick="DS()" value="𝚂𝚎𝚌𝚘𝚗𝚍𝚜">
+							<input type="button" class="btn btn-light" onclick="DM()" value="𝙼𝚒𝚗𝚞𝚝𝚎𝚜">
+							<input type="button" class="btn btn-light" onclick="DH()" value="𝙷𝚘𝚞𝚛𝚜">
+						</th>
+					</tr>
+				</tbody>
+			</table>
+
+			<script type="text/javascript">
+				function SM(){
+				var x, y
+				x = (document.getElementById('SECONDS').value);
+				y = 60;		
+				alert(x / y);
+			}
+				function SH(){
+				var x, y
+				x = (document.getElementById('SECONDS').value);
+				y = 3600;		
+				alert(x / y);
+			}
+
+				function SD(){
+				var x, y 
+				x = (document.getElementById('SECONDS').value);
+				y = 86400;		
+				alert(x / y);
+			}
+
+				function MS(){
+				var x, y
+				x = (document.getElementById('MINUTES').value);
+				y = 60;		
+				alert(x * y);
+			}
+				function MH(){
+				var x, y
+				x = (document.getElementById('MINUTES').value);
+				y = 60;		
+				alert(x / y);
+			}
+				function MD(){
+				var x, y
+				x = (document.getElementById('MINUTES').value);
+				y = 1440;		
+				alert(x / y);
+			}
+
+				function HS(){
+				var x, y
+				x = (document.getElementById('HOURS').value);
+				y = 3600;		
+				alert(x * y);
+			}
+				function HM(){
+				var x, y
+				x = (document.getElementById('HOURS').value);
+				y = 60;		
+				alert(x * y);
+			}
+				function HD(){
+				var x, y
+				x = (document.getElementById('HOURS').value);
+				y = 24;		
+				alert(x / y);
+			}
+
+				function DS(){
+				var x, y
+				x = (document.getElementById('DAYS').value);
+				y = 86400;		
+				alert(x * y);
+			}
+				function DM(){
+				var x, y
+				x = (document.getElementById('DAYS').value);
+				y = 1440;		
+				alert(x * y);
+			}
+				function DH(){
+				var x, y
+				x = (document.getElementById('DAYS').value);
+				y = 24;		
+				alert(x * y);
+			}
+
+				</script>
+				<br><br>
+				<center><h4> <b>“𝚃𝚒𝚖𝚎 𝚢𝚘𝚞 𝚎𝚗𝚓𝚘𝚢 𝚠𝚊𝚜𝚝𝚒𝚗𝚐 𝚒𝚜 𝚗𝚘𝚝 𝚠𝚊𝚜𝚝𝚎𝚍 𝚝𝚒𝚖𝚎.”</b></h4></center>
+				<center>  – 𝙼𝚊𝚛𝚝𝚑𝚎 𝚃𝚛𝚘𝚕𝚢-𝙲𝚞𝚛𝚝𝚒𝚗</center>
+				<br>
+</body>
+</html>
